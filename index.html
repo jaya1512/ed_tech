@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- vanilacss heres -->
+    <link rel="stylesheet" href="stye.css" class="css" />
     <!-- tailwind css here -->
     <!-- js heres -->
 
@@ -14,27 +16,24 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
               clifford: "#da373d",
+              wrapper: "bg-",
             },
           },
         },
       };
     </script>
+
+    <!-- icons heresss -->
+    <script
+      src="https://kit.fontawesome.com/4904cf6a57.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -61,12 +60,15 @@
       <section class="container mx-auto pb-12">
         <div class="carousel w-full">
           <div id="slide1" class="carousel-item relative w-full">
-            <img src="/images/cover/cover-1.png" class="w-full" />
+            <div class="carousel-img">
+              <img src="/images/cover/cover-1.png" class="w-full" />
+            </div>
 
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
               <a href="#slide4" class="btn btn-circle">❮</a>
+
               <div class="text-center space-y-7">
                 <h1 class="text-5xl font-bold text-white">
                   Get Started Digital <br />
@@ -228,7 +230,7 @@
         <div class="mx-14 space-y-4">
           <div
             tabindex="0"
-            class="collapse collapse-open border border-base-300 bg-base-100 rounded-box"
+            class="collapse collapse-arrow collapse-open border border-base-300 bg-base-100 rounded-box"
           >
             <div class="collapse-title text-xl font-medium bg-slate-500">
               What other services are you compatible with?
@@ -302,14 +304,18 @@
       </section>
     </main>
     <footer class="bg-black h-80">
-      <div class="pt-24 text-center">
+      <div class="pt-24 text-center space-y-5">
         <h3 class="text-2xl text-white font-bold">Pro Edu</h3>
         <p class="text-slate-400">
           Office 41, Zawaya Buildin, Ghala Muscat, <br />
           Sultanate of Oman <br />
           Privacy Ploicy | Terms of use
         </p>
-        <div></div>
+        <div class="text-white">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
       </div>
     </footer>
   </body>
